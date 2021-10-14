@@ -28,7 +28,7 @@ a{
 .website-desc{
     display: flex;
     flex-direction: column;
-    flex-basis: 0;
+    flex-basis: 20%;
 }
 
 .logo-website-desc{
@@ -37,22 +37,28 @@ a{
     align-items: center;
     gap: 50px;
     background-color: #1F2937;
+    padding-top: 50px;
 }
 
 .pics-text-body{
     display: flex;
     justify-content: center;
     gap: 35px;
+    flex-wrap: wrap;
 }
 
 .second-box{
     text-align: center;
+    margin-bottom: 20px;
+
 }
 
 .third-box{
     display: flex;
+    flex: 1;
     justify-content: center;
-    justify-items: center;
+    align-items: center;
+    background-color: #E5E7EB;
 }
 
 body{
@@ -62,13 +68,55 @@ body{
 }
 
 .footer{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
 }
 
 .fourth-box{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .call-to-action{
     background-color: #3882F6;
+    padding: 20px 250px 20px 250px;
+    border-radius: 20px;
+}
+
+.info{
+    margin-bottom: 30px;
+    font-weight: 900px;
+    margin-top: 25px;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.testimonial{
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    color: #1F2937;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.you-think-i-care-if-i-have-infinite-divs{
+    padding-left: 500px;
+    font-weight: bold;
+}
+
+.fourth-box-bigger-box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.call-to-action{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
 }
