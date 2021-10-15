@@ -1,122 +1,169 @@
-html, body {
+/* shared */
+
+*{
     margin: 0;
-    height: 100vh;
+    padding: 0;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.header{
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+img{
+  
 }
 
 a{
     text-decoration: none;
 }
- 
-.website-desc{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
+
+ul{
+    list-style-type: none;
 }
 
-.logo-website-desc{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: #1F2937;
-    padding-top: 50px;
-}
-
-.pics-text-body{
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
-}
-
-.second-box{
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.third-box{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: #E5E7EB;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1F2937;
+#sign-up-button-first-container,
+#sign-up-button-fourth-container{
+    padding: 0 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
     color: white;
 }
 
-.fourth-box{
+/* Header/First container */
+
+#header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.hero-image-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
     align-items: center;
 }
 
-.call-to-action{
-    background-color: #3882F6;
-    padding: 20px 250px 20px 250px;
-    border-radius: 20px;
+.container{
+    display: flex; 
+    justify-content: center;
 }
 
-.info{
-    margin-bottom: 30px;
-    font-weight: 900px;
-    margin-top: 25px;
+#inside-first-container{
+    max-width: 65vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+#first-container{
+    background-color: #1F2937;
+    flex-wrap: wrap;
+}
+
+#hero-main-text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+#hero-secondary-text,
+.header-nav-links,
+a,
+#main-logo{
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+button{
+    background-color: #3882F6;
+}
+#sign-up-button-first-container{
+    border-style: none;
+}
+
+
+}
+
+#sign-up-button:hover{
+    color: red;
+}
+
+/* Second container */
+
+#images-second-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.images-second-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#second-container{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#header-text-second-container{
+    font-size: 3rem;
+
+}
+
+/* Third container */
+
+#third-container{
+    background-color: #E5E7EB;
+}
+
+#quote-text{
     font-size: 36px;
     color: #1F2937;
-}
-
-.testimonial{
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    color: #1F2937;
-    font-size: 20px;
     font-style: italic;
 }
 
-.you-think-i-care-if-i-have-infinite-divs{
-    padding-left: 500px;
-    font-weight: bold;
+#content-third-container{
+  max-width: 65vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.fourth-box-bigger-box{
-    margin-top: 50px;
-    margin-bottom: 50px;
+#quote-said-by{
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 30px;
 }
 
-.call-to-action{
+/* Fourth container */
+
+#content-fourth-container{
+    background-color: #3882F6;
+    border-radius: 8px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-grow: 1;
+    margin: 5rem 5rem;
+    padding: 5rem;
+}
+
+#sign-up-button-fourth-container{
+    border: 2px solid white;
+}
+
+#sign-up-button-fourth-container:hover{
+    color: black;
+}
+
+#call-to-action{
+    font-size: 2rem;
+}
+
+/* Footer/Fifth container */
+
+#fifth-container{
+    background-color:#1F2937;
+    color: white;
 }
