@@ -5,10 +5,6 @@
     padding: 0;
 }
 
-img{
-  
-}
-
 a{
     text-decoration: none;
 }
@@ -17,12 +13,22 @@ ul{
     list-style-type: none;
 }
 
-#sign-up-button-first-container,
-#sign-up-button-fourth-container{
+.button{
     padding: 0 1rem;
     border-radius: 8px;
     font-size: 1.5rem;
-    color: white;
+    color: black;
+    background-color: #3882F6;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.container{
+    display: flex; 
+    justify-content: center;
 }
 
 /* Header/First container */
@@ -31,18 +37,12 @@ ul{
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
-}
-
-.hero-image-container{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10rem;
     align-items: center;
 }
 
-.container{
-    display: flex; 
-    justify-content: center;
+#first-container{
+    background-color: #1F2937;
+    flex-wrap: wrap;
 }
 
 #inside-first-container{
@@ -51,14 +51,26 @@ ul{
     flex-direction: column;
 }
 
+#main-logo{
+    color: #E5E7EB;
+    font-size: 36px;
+}
+
 .header-nav-links{
     display: flex;
     gap: 2rem;
 }
 
-#first-container{
-    background-color: #1F2937;
-    flex-wrap: wrap;
+.nav-links:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.hero-image-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 0 8rem 0;
+    align-items: center;
 }
 
 #hero-main-text{
@@ -69,38 +81,18 @@ ul{
 
 #hero-secondary-text,
 .header-nav-links,
-a,
-#main-logo{
+a{
     font-size: 18px;
     color: #E5E7EB
 }
 
-button{
-    background-color: #3882F6;
-}
 #sign-up-button-first-container{
     border-style: none;
-}
-
-
-}
-
-#sign-up-button:hover{
-    color: red;
+    padding: 3px 20px 5px 20px;
+    font-size: 20px;
 }
 
 /* Second container */
-
-#images-second-container{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.images-second-container{
-    display: flex;
-    flex-direction: column;
-}
 
 #second-container{
     text-align: center;
@@ -109,25 +101,43 @@ button{
 
 #header-text-second-container{
     font-size: 3rem;
+    margin-bottom: 3rem;
+}
 
+#images-text-second-container{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.images-second-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    row-gap: 1rem;
+}
+
+#content-second-container{
+    padding-bottom: 2rem;
 }
 
 /* Third container */
 
 #third-container{
     background-color: #E5E7EB;
+    padding: 12rem 0;
+}
+
+#content-third-container{
+    max-width: 65vw;
+    display: flex;
+    flex-direction: column;
 }
 
 #quote-text{
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
-}
-
-#content-third-container{
-  max-width: 65vw;
-  display: flex;
-  flex-direction: column;
 }
 
 #quote-said-by{
@@ -139,26 +149,25 @@ button{
 /* Fourth container */
 
 #content-fourth-container{
+    color: white;
     background-color: #3882F6;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-grow: 1;
-    margin: 5rem 5rem;
+    margin: 5rem 27rem;
     padding: 5rem;
-}
-
-#sign-up-button-fourth-container{
-    border: 2px solid white;
-}
-
-#sign-up-button-fourth-container:hover{
-    color: black;
+    flex-wrap: wrap;
 }
 
 #call-to-action{
     font-size: 2rem;
+}
+
+#sign-up-button-fourth-container{
+    border: 2px solid white;
+    padding-bottom: 2px;
 }
 
 /* Footer/Fifth container */
@@ -166,4 +175,11 @@ button{
 #fifth-container{
     background-color:#1F2937;
     color: white;
+    padding: 2.5rem;
 }
+
+#odin-project-link:hover,
+#Dauxlan-github:hover{
+    color: grey;
+}
+
